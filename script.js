@@ -61,3 +61,41 @@ function futureValue2(){
 
  }
  futureValue2();
+
+
+
+
+ document.getElementById('btn1').onclick=function(){
+  var rows=document.getElementById('ppt').value
+  
+  var columns=4;
+  if(rows=="" || rows==null)
+  rows=10
+  if(columns=="" || columns==null)
+  columns=10
+  var output='<table border="1" cellspacing="0" cellpadding="5" class="table">'
+
+  function createTable(rows,columns){
+    var premium=document.getElementById("premium").value;
+    var sv=document.getElementById("sv").value;
+    
+
+    
+      for(var i=1;i<=rows;i++){
+          output=output+'<tr id="'+i+'">'
+          
+              output=output+'<td  id="col_'+i+'_1">'+premium+'</td>'
+              output=output+'<td id="col_'+i+'_2">'+'-'+premium+'</td>'
+              output=output+'<td id="col_'+i+'_3">'+'C'+'</td>'
+              output=output+'<td id="col_'+i+'_4">'+'C'+'</td>'
+              
+              
+          
+          output=output+'</tr>'
+      }
+      output=output+'</table>'
+      document.getElementById('container').innerHTML=output   
+      
+ }
+ createTable(rows,columns)
+}

@@ -41,9 +41,17 @@
                 <span class="input-group-text" id="inputGroup-sizing-default">Surrender Value</span>
                 <input id="sv" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Exit plan year">
               </div>
+              <div  class="input-group mb-3 w-75">
+                <span class="input-group-text" id="inputGroup-sizing-default">Rate Of Intrest</span>
+                <input  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Rate of Interest">
+              </div>
+              <div  class="input-group mb-3 w-75">
+                <span class="input-group-text" id="inputGroup-sizing-default">Returns With Benefit</span>
+                <input  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Benefit">
+              </div>
               <div class="d-grid gap-2 col-6 mx-auto">
                 <!-- <button class="btn btn-primary" type="button">Button</button> -->
-                <button class="btn btn-primary" type="button" onclick="function1()">Calculate the Plan Benefit</button>
+                <button id="btn1" class="btn btn-primary" type="button" onclick="function1()">Calculate the Plan Benefit</button>
               </div>
               
               <div class="output">
@@ -66,6 +74,7 @@
                   
                   
               </div>
+              <div id='container'></div>
               <!-- <div class="output">
                   <span>Total Amount</span>
                   <span>Total Gain</span>
